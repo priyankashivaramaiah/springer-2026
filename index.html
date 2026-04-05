@@ -3,721 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IEEE RAISQE'26 - International Conference on Reliable & Intelligent Systems for Quality Excellence">
-    <title>IEEE RAISQE'26 - International Conference</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Springer 2026 Conference</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(270deg, #ff7e5f, #feb47b);
+            background-size: 200% 200%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        h1 {
+            color: #D63E30;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            background: #333;
+            color: white;
+            position: relative;
+            clear: both;
+        }
+        h2 {
+            text-decoration: underline;
+            color: #D63E30;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- ===== NAVIGATION BAR ===== -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home"><i class="fas fa-graduation-cap"></i> IEEE RAISQE'26</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
-                <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-                <li class="nav-item"><a href="#papers" class="nav-link">Papers</a></li>
-                <li class="nav-item"><a href="#registration" class="nav-link">Registration</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- ===== HERO SECTION ===== -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">IEEE RAISQE'26</h1>
-            <p class="hero-subtitle">International Conference on Reliable & Intelligent Systems for Quality Excellence</p>
-            <p class="hero-date">June 15-17, 2026 | R V College of Engineering, Bangalore</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('registration').scrollIntoView();">Register Now</button>
-                <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView();">Learn More</button>
-            </div>
-        </div>
-        <div class="hero-background"></div>
+    <header>
+        <h1>Welcome to the Springer 2026 Conference</h1>
+    </header>
+    <section class="hero">
+        <h2>Featured Statistics</h2>
+        <p>Join us for an unforgettable experience!</p>
     </section>
-
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About RAISQE'26</h2>
-                <p class="section-subtitle">Advancing Excellence in Intelligent Systems</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Welcome to IEEE RAISQE'26</h3>
-                    <p>IEEE RAISQE'26 is a premier international conference dedicated to advancing research and innovation in reliable and intelligent systems. We bring together leading researchers, practitioners, and industry experts to share groundbreaking discoveries and best practices.</p>
-                    <p>The conference provides a platform for knowledge exchange, networking, and collaboration among professionals from academia and industry worldwide.</p>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <h4>World-Class Speakers</h4>
-                            <p>Leading researchers and industry experts sharing cutting-edge insights</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <h4>Interactive Workshops</h4>
-                            <p>Hands-on training sessions and practical skill development</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <h4>Networking Opportunities</h4>
-                            <p>Connect with peers, mentors, and industry leaders</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <h4>Publications</h4>
-                            <p>Peer-reviewed papers in IEEE proceedings</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/400x400/001f3f/00bfff?text=RAISQE+2026" alt="Conference">
-                </div>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <h2>Schedule Event 1</h2>
+            <p>Details about the event.</p>
         </div>
-    </section>
-
-    <!-- ===== SPEAKERS SECTION ===== -->
-    <section id="speakers" class="speakers">
-        <div class="container">
-            <div class="section-header">
-                <h2>Keynote Speakers</h2>
-                <p class="section-subtitle">Meet Our Distinguished Speakers</p>
-            </div>
-            <div class="speakers-grid">
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <img src="https://via.placeholder.com/280x280/00bfff/001f3f?text=Dr.+Jane+Smith" alt="Dr. Jane Smith">
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Dr. Jane Smith</h3>
-                        <p class="speaker-title">AI Systems Lead</p>
-                        <p class="speaker-bio">Leading innovator in machine learning and intelligent system design with 15+ years of industry experience at major tech companies.</p>
-                        <div class="speaker-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <img src="https://via.placeholder.com/280x280/0052cc/00bfff?text=Prof.+John+Anderson" alt="Prof. John Anderson">
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Prof. John Anderson</h3>
-                        <p class="speaker-title">Reliability Engineering</p>
-                        <p class="speaker-bio">Expert in system reliability, fault tolerance, and quality assurance with multiple patents and publications in IEEE journals.</p>
-                        <div class="speaker-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <img src="https://via.placeholder.com/280x280/ff6b6b/ffffff?text=Dr.+Priya+Sharma" alt="Dr. Priya Sharma">
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Dr. Priya Sharma</h3>
-                        <p class="speaker-title">Research Scientist</p>
-                        <p class="speaker-bio">Pioneer in AI ethics and intelligent systems, advocating for responsible and trustworthy AI deployment in critical systems.</p>
-                        <div class="speaker-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <img src="https://via.placeholder.com/280x280/4ecdc4/001f3f?text=Dr.+Michael+Lee" alt="Dr. Michael Lee">
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Dr. Michael Lee</h3>
-                        <p class="speaker-title">IoT & Embedded Systems</p>
-                        <p class="speaker-bio">Expert in Internet of Things and embedded systems reliability with focus on edge computing and autonomous systems.</p>
-                        <div class="speaker-social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+            <h2>Schedule Event 2</h2>
+            <p>Details about the event.</p>
         </div>
-    </section>
-
-    <!-- ===== SCHEDULE SECTION ===== -->
-    <section id="schedule" class="schedule">
-        <div class="container">
-            <div class="section-header">
-                <h2>Conference Schedule</h2>
-                <p class="section-subtitle">Three Days of Innovation and Learning</p>
-            </div>
-
-            <div class="schedule-tabs">
-                <button class="tab-button active" data-day="day1">Day 1 - June 15</button>
-                <button class="tab-button" data-day="day2">Day 2 - June 16</button>
-                <button class="tab-button" data-day="day3">Day 3 - June 17</button>
-            </div>
-
-            <div class="schedule-content">
-                <div id="day1" class="schedule-day active">
-                    <div class="schedule-item">
-                        <div class="schedule-time">08:00 AM - 09:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Registration & Welcome Breakfast</h4>
-                            <p>Check-in, collect conference materials, and light refreshments</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">09:00 AM - 10:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Opening Ceremony</h4>
-                            <p>Welcome address and conference overview by organizing committee</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">10:00 AM - 11:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Keynote 1: Dr. Jane Smith</h4>
-                            <p>"AI Systems for Intelligent Decision Making"</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">11:00 AM - 11:30 AM</div>
-                        <div class="schedule-event">
-                            <h4>Coffee Break</h4>
-                            <p>Networking and refreshments</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">11:30 AM - 1:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Technical Session 1: AI & Machine Learning</h4>
-                            <p>Research presentations on AI applications and system reliability</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">1:00 PM - 2:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Lunch</h4>
-                            <p>Lunch break with networking opportunities</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">2:00 PM - 3:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Technical Session 2: Quality Assurance</h4>
-                            <p>Presentations on QA methodologies and testing strategies</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">3:30 PM - 6:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Workshop 1: Practical Implementation</h4>
-                            <p>Hands-on workshop on system reliability engineering</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">6:00 PM - 7:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Welcome Reception & Networking Dinner</h4>
-                            <p>Evening reception with speakers and attendees</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="day2" class="schedule-day">
-                    <div class="schedule-item">
-                        <div class="schedule-time">08:30 AM - 09:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Breakfast</h4>
-                            <p>Continental breakfast and coffee</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">09:00 AM - 10:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Keynote 2: Prof. John Anderson</h4>
-                            <p>"Building Resilient Systems in the Age of Uncertainty"</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">10:00 AM - 11:30 AM</div>
-                        <div class="schedule-event">
-                            <h4>Technical Session 3: IoT & Embedded Systems</h4>
-                            <p>Research on embedded systems reliability and IoT applications</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">11:30 AM - 12:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Coffee Break</h4>
-                            <p>Networking and refreshments</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">12:00 PM - 1:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Technical Session 4: Cloud & Edge Computing</h4>
-                            <p>Presentations on distributed systems and edge computing</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">1:30 PM - 2:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Lunch</h4>
-                            <p>Lunch break</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">2:30 PM - 4:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Workshop 2: Advanced Tools & Technologies</h4>
-                            <p>Training on latest development and testing tools</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">4:00 PM - 5:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Industry Panel Discussion</h4>
-                            <p>Panel of industry leaders discussing real-world challenges and solutions</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">6:00 PM - 8:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Conference Gala Dinner</h4>
-                            <p>Networking dinner with keynote speakers</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="day3" class="schedule-day">
-                    <div class="schedule-item">
-                        <div class="schedule-time">08:30 AM - 09:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Breakfast</h4>
-                            <p>Continental breakfast and coffee</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">09:00 AM - 10:00 AM</div>
-                        <div class="schedule-event">
-                            <h4>Keynote 3: Dr. Priya Sharma</h4>
-                            <p>"Ethics & Trustworthiness in Intelligent Systems"</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">10:00 AM - 11:30 AM</div>
-                        <div class="schedule-event">
-                            <h4>Technical Session 5: Cybersecurity</h4>
-                            <p>Security aspects of intelligent and reliable systems</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">11:30 AM - 12:00 PM</div>
-                        <div class="schedule-event">
-                            <h4>Coffee Break</h4>
-                            <p>Networking and refreshments</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">12:00 PM - 1:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Technical Session 6: Future Trends</h4>
-                            <p>Emerging technologies and future research directions</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">1:30 PM - 2:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Lunch</h4>
-                            <p>Lunch break</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">2:30 PM - 3:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Best Paper Awards</h4>
-                            <p>Announcement and celebration of outstanding research</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-time">3:30 PM - 4:30 PM</div>
-                        <div class="schedule-event">
-                            <h4>Closing Ceremony</h4>
-                            <p>Final remarks, announcements, and thank you reception</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+            <h2>Schedule Event 3</h2>
+            <p>Details about the event.</p>
         </div>
-    </section>
-
-    <!-- ===== PAPERS SECTION ===== -->
-    <section id="papers" class="papers">
-        <div class="container">
-            <div class="section-header">
-                <h2>Call for Papers</h2>
-                <p class="section-subtitle">Share Your Research with the World</p>
-            </div>
-
-            <div class="papers-content">
-                <div class="papers-info">
-                    <h3>Paper Submission Guidelines</h3>
-                    <p>We welcome original, unpublished research papers in the following tracks:</p>
-                    <div class="paper-tracks">
-                        <div class="track">
-                            <h4><i class="fas fa-lightbulb"></i> AI & Machine Learning</h4>
-                            <p>Applications of AI in system design, optimization, and intelligence</p>
-                        </div>
-                        <div class="track">
-                            <h4><i class="fas fa-shield-alt"></i> Reliability Engineering</h4>
-                            <p>Fault tolerance, availability, and system resilience</p>
-                        </div>
-                        <div class="track">
-                            <h4><i class="fas fa-cogs"></i> Quality Assurance</h4>
-                            <p>Testing methodologies, verification, and validation</p>
-                        </div>
-                        <div class="track">
-                            <h4><i class="fas fa-network-wired"></i> IoT & Edge Computing</h4>
-                            <p>Distributed systems, edge computing, and smart devices</p>
-                        </div>
-                    </div>
-
-                    <div class="important-dates">
-                        <h3>Important Dates</h3>
-                        <ul>
-                            <li><strong>Paper Submission Deadline:</strong> March 31, 2026</li>
-                            <li><strong>Acceptance Notification:</strong> April 30, 2026</li>
-                            <li><strong>Camera Ready Deadline:</strong> May 15, 2026</li>
-                            <li><strong>Conference Dates:</strong> June 15-17, 2026</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="papers-form">
-                    <h3>Quick Link: Start Your Submission</h3>
-                    <form id="paperSubmissionForm">
-                        <div class="form-group">
-                            <label for="paper-title">Paper Title *</label>
-                            <input type="text" id="paper-title" name="title" required placeholder="Enter your paper title">
-                        </div>
-                        <div class="form-group">
-                            <label for="paper-author">Corresponding Author *</label>
-                            <input type="text" id="paper-author" name="author" required placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="paper-email">Email *</label>
-                            <input type="email" id="paper-email" name="email" required placeholder="your.email@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="paper-track">Select Track *</label>
-                            <select id="paper-track" name="track" required>
-                                <option value="">Choose a track</option>
-                                <option value="ai">AI & Machine Learning</option>
-                                <option value="reliability">Reliability Engineering</option>
-                                <option value="quality">Quality Assurance</option>
-                                <option value="iot">IoT & Edge Computing</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="paper-abstract">Abstract *</label>
-                            <textarea id="paper-abstract" name="abstract" required rows="5" placeholder="Paper abstract (max 250 words)"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit Paper</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== REGISTRATION SECTION ===== -->
-    <section id="registration" class="registration">
-        <div class="container">
-            <div class="section-header">
-                <h2>Registration</h2>
-                <p class="section-subtitle">Secure Your Spot at RAISQE'26</p>
-            </div>
-
-            <div class="registration-content">
-                <div class="pricing-cards">
-                    <div class="pricing-card">
-                        <div class="price-badge">Student</div>
-                        <h3>$50</h3>
-                        <p class="price-desc">Valid student ID required</p>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Full conference access</li>
-                            <li><i class="fas fa-check"></i> Digital proceedings</li>
-                            <li><i class="fas fa-check"></i> Certificate of attendance</li>
-                            <li><i class="fas fa-times"></i> Gala dinner</li>
-                            <li><i class="fas fa-times"></i> Networking lunch</li>
-                        </ul>
-                        <button class="btn btn-secondary">Register</button>
-                    </div>
-
-                    <div class="pricing-card featured">
-                        <div class="price-badge featured-badge">Most Popular</div>
-                        <div class="price-badge">Academic</div>
-                        <h3>$150</h3>
-                        <p class="price-desc">Faculty and researchers</p>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Full conference access</li>
-                            <li><i class="fas fa-check"></i> Digital proceedings</li>
-                            <li><i class="fas fa-check"></i> Certificate of attendance</li>
-                            <li><i class="fas fa-check"></i> Gala dinner</li>
-                            <li><i class="fas fa-check"></i> Networking lunch</li>
-                        </ul>
-                        <button class="btn btn-primary">Register</button>
-                    </div>
-
-                    <div class="pricing-card">
-                        <div class="price-badge">Professional</div>
-                        <h3>$250</h3>
-                        <p class="price-desc">Industry professionals</p>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Full conference access</li>
-                            <li><i class="fas fa-check"></i> Digital proceedings</li>
-                            <li><i class="fas fa-check"></i> Certificate of attendance</li>
-                            <li><i class="fas fa-check"></i> Gala dinner</li>
-                            <li><i class="fas fa-check"></i> Premium networking</li>
-                        </ul>
-                        <button class="btn btn-secondary">Register</button>
-                    </div>
-
-                    <div class="pricing-card">
-                        <div class="price-badge">Corporate</div>
-                        <h3>$1000</h3>
-                        <p class="price-desc">Company team rate (up to 5)</p>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Full conference access</li>
-                            <li><i class="fas fa-check"></i> Digital proceedings</li>
-                            <li><i class="fas fa-check"></i> Certificate of attendance</li>
-                            <li><i class="fas fa-check"></i> Exhibition booth</li>
-                            <li><i class="fas fa-check"></i> Corporate branding</li>
-                        </ul>
-                        <button class="btn btn-secondary">Register</button>
-                    </div>
-                </div>
-
-                <div class="registration-form-section">
-                    <h3>Register for the Conference</h3>
-                    <form id="registrationForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="reg-firstname">First Name *</label>
-                                <input type="text" id="reg-firstname" name="firstname" required placeholder="Your first name">
-                            </div>
-                            <div class="form-group">
-                                <label for="reg-lastname">Last Name *</label>
-                                <input type="text" id="reg-lastname" name="lastname" required placeholder="Your last name">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="reg-email">Email Address *</label>
-                                <input type="email" id="reg-email" name="email" required placeholder="your.email@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="reg-phone">Phone Number</label>
-                                <input type="tel" id="reg-phone" name="phone" placeholder="+91 98765 43210">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="reg-organization">Organization/University *</label>
-                                <input type="text" id="reg-organization" name="organization" required placeholder="Your institution">
-                            </div>
-                            <div class="form-group">
-                                <label for="reg-category">Registration Category *</label>
-                                <select id="reg-category" name="category" required>
-                                    <option value="">Select category</option>
-                                    <option value="student">Student</option>
-                                    <option value="academic">Academic</option>
-                                    <option value="professional">Professional</option>
-                                    <option value="corporate">Corporate</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="reg-country">Country *</label>
-                            <input type="text" id="reg-country" name="country" required placeholder="Your country">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="reg-interests">Research Interests</label>
-                            <textarea id="reg-interests" name="interests" rows="4" placeholder="Tell us about your research interests"></textarea>
-                        </div>
-
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="reg-agree" name="agree" required>
-                            <label for="reg-agree">I agree to the conference terms and conditions *</label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large">Complete Registration</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SPONSORS SECTION ===== -->
-    <section class="sponsors">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Sponsors</h2>
-                <p class="section-subtitle">Making RAISQE'26 Possible</p>
-            </div>
-            <div class="sponsors-grid">
-                <div class="sponsor">
-                    <img src="https://via.placeholder.com/200x100/001f3f/ffffff?text=Sponsor+1" alt="Sponsor 1">
-                </div>
-                <div class="sponsor">
-                    <img src="https://via.placeholder.com/200x100/0052cc/ffffff?text=Sponsor+2" alt="Sponsor 2">
-                </div>
-                <div class="sponsor">
-                    <img src="https://via.placeholder.com/200x100/00bfff/001f3f?text=Sponsor+3" alt="Sponsor 3">
-                </div>
-                <div class="sponsor">
-                    <img src="https://via.placeholder.com/200x100/ff6b6b/ffffff?text=Sponsor+4" alt="Sponsor 4">
-                </div>
-                <div class="sponsor">
-                    <img src="https://via.placeholder.com/200x100/4ecdc4/001f3f?text=Sponsor+5" alt="Sponsor 5">
-                </div>
-                <div class="sponsor">
-                    <img src="https://via.placeholder.com/200x100/95e1d3/001f3f?text=Sponsor+6" alt="Sponsor 6">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <p class="section-subtitle">Get in Touch with Our Team</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Location</h4>
-                        <p>R V College of Engineering<br>
-                        Bangalore - 560059<br>
-                        Karnataka, India</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p><a href="mailto:info@raisqe26.org">info@raisqe26.org</a><br>
-                        <a href="mailto:submissions@raisqe26.org">submissions@raisqe26.org</a><br>
-                        <a href="mailto:sponsorship@raisqe26.org">sponsorship@raisqe26.org</a></p>
-                    </div>
-
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <p><a href="tel:+919876543210">+91 98765 43210</a><br>
-                        <a href="tel:+919876543211">+91 98765 43211</a></p>
-                    </div>
-
-                    <div class="contact-card">
-                        <i class="fas fa-clock"></i>
-                        <h4>Office Hours</h4>
-                        <p>Monday - Friday: 9 AM - 5 PM IST<br>
-                        Saturday - Sunday: Closed</p>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="contact-name">Name *</label>
-                            <input type="text" id="contact-name" name="name" required placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email">Email *</label>
-                            <input type="email" id="contact-email" name="email" required placeholder="your.email@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-subject">Subject *</label>
-                            <input type="text" id="contact-subject" name="subject" required placeholder="Message subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-message">Message *</label>
-                            <textarea id="contact-message" name="message" required rows="5" placeholder="Your message..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>About RAISQE'26</h4>
-                    <p>IEEE RAISQE'26 is dedicated to advancing research in reliable and intelligent systems for quality excellence.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
-                        <li><a href="#papers">Papers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <form id="newsletterForm">
-                        <input type="email" placeholder="Your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 IEEE RAISQE Conference. All rights reserved.</p>
-                <p>Organized by IEEE RV College Student Branch | Supported by IEEE Computer Society</p>
-            </div>
-        </div>
+    </div>
+    <footer>
+        <p>© 2026 Springer Conference</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
